@@ -1,0 +1,60 @@
+/* common element styles */
+html { font-family: Roboto, sans-serif; font-weight: 300; font-size: 11pt; }
+section, aside, div, ul, li { margin: 0; line-height: 14pt; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 400; }
+h1 { font-size: 24pt; line-height: 36pt; }
+h2 { font-size: 14pt; line-height: 20pt; }
+h3 { font-size: 12pt; line-height: 16pt; }
+h4, h5, h6 { font-size: 11pt; line-height: 16pt; }
+strong { font-weight: 400; }
+
+/* hyperlink styles and more */
+a, a:link, a:visited, a:hover, a:active { color: inherit; text-decoration: none; }
+@media screen {
+	#envelope { margin: 0.25in 0 0.5in 0; }
+	a.underscored { padding: 0 1pt; background: linear-gradient(0deg,rgb(143,220,241) 2pt,rgba(255,255,255,0) 2pt); }
+	a.underscored:hover { background: linear-gradient(0deg,rgb(143,220,241) 50%,rgba(255,255,255,0) 50%); }
+	a.highlighted { padding: 0 2pt; background: linear-gradient(0deg,rgb(189,244,170) 50%,rgba(255,255,255,0) 50%); }
+	a.highlighted:hover { background: rgb(189,244,170); }
+	.for-print-only { display: none; }
+}
+@media print {
+	.for-web-only { display: none; }
+}
+
+/* browser-upgrade styles */
+.browser-upgrade { padding: 4pt 6pt; background: rgb(255,199,206); }
+.browser-upgrade a { text-decoration: underline; }
+
+/* cv header and layout styles */
+header { font-family: 'Roboto Slab', serif; }
+header aside, header section { font-size: 10pt; margin: 4pt 6pt; }
+header aside { clear: right; float: right; }
+main section { margin: 8pt 0; }
+
+/* cv section layout styles */
+.section-heading { margin: 4pt 0; page-break-after: avoid; }
+.section-heading .highlighted { padding: 0 4pt;
+	background: linear-gradient(0deg,rgb(255,243,103) 50%,rgba(255,255,255,0) 50%); }
+.section-heading .more-info { font-size: 10pt; font-weight: 300; color: rgb(76,78,86); }
+.section-contents { padding: 0 4pt; list-style-type: none; page-break-before: avoid; }
+.section-contents li { margin: 4pt 0; clear: both; page-break-inside: avoid; }
+.section-contents .item-date { float: left; }
+.section-contents .item-desc { margin-left: 72pt; }
+.section-contents .more-info { font-size: 9.5pt; color: rgb(76,78,86); }
+.details { font-size: 10pt; margin: 2pt; padding: 0 4pt; border-left: 2pt solid rgb(224,224,224); }
+.details.indented { margin-left: 8pt; }
+
+/* cv section-general styles*/
+.inline-heading { font-style: italic; }
+.supple { font-size: 10pt; font-family: 'Roboto Slab', serif; }
+.journal-title, .journal-volume, .poster-title { font-style: italic; }
+a.doi, a.doi:link, a.doi:visited, a.doi:hover, a.doi:active { font-size: 10pt; color: rgb(76,78,86); text-decoration: none; }
+a.doi:hover { background: linear-gradient(0deg,rgb(208,211,205) 50%,rgba(255,255,255,0) 50%); }
+.author-myself { padding: 0 1pt; background: linear-gradient(0deg,rgb(255,243,103) 50%,rgba(255,255,255,0) 50%); }
+@media print { .author-myself { padding: 0; background: none; font-weight: 400; } }
+
+/* cv section-specific styles */
+#publications li, #conference-presentations li { padding-left: 4em; text-indent: -4em; }
+#references .ref-name { float: left; }
+#references .ref-contact { margin-left: 4in; font-size: 10pt; }

@@ -1,0 +1,5 @@
+@page { size: A4 portrait; margin: 25mm; }
+* { box-sizing: border-box; }
+body{ width: 160mm; min-height: 247mm; margin: 0 auto; }
+@media print { body { margin: 0; } }
+@media screen { body { margin: 6mm auto; } }

@@ -1,0 +1,5 @@
+@page { size: letter portrait; margin: 1in; }
+* { box-sizing: border-box; }
+body { width: 6.5in; min-height: 9in; }
+@media print { body { margin: 0; } }
+@media screen { body { margin: 0 auto; } }
