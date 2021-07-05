@@ -49,7 +49,7 @@ main section { margin: 8pt 0; }
 /* cv section-general styles*/
 .inline-heading { font-style: italic; }
 .supple { font-size: 10pt; font-family: 'Roboto Slab', serif; }
-.journal-title, .journal-volume, .poster-title { font-style: italic; }
+.journal-title, .journal-volume, .presn-title { font-style: italic; }
 a.doi, a.doi:link, a.doi:visited, a.doi:hover, a.doi:active { font-size: 10pt; color: rgb(76,78,86); text-decoration: none; }
 a.doi:hover { background: linear-gradient(0deg,rgb(208,211,205) 50%,rgba(255,255,255,0) 50%); }
 .author-myself { padding: 0 1pt; background: linear-gradient(0deg,rgb(255,243,103) 50%,rgba(255,255,255,0) 50%); }
